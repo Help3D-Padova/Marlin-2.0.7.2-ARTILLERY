@@ -164,7 +164,7 @@
 #define STR_ERR_MESH_XY                     "Mesh point out of range"
 #define STR_ERR_ARC_ARGS                    "G2/G3 bad parameters"
 #define STR_ERR_PROTECTED_PIN               "Protected Pin"
-#define STR_ERR_M420_FAILED                 "Failed to enable Bed Leveling"
+#define STR_ERR_M420_FAILED                 "Bed Level non attivo. Salva una nuova mesh"
 #define STR_ERR_M428_TOO_FAR                "Too far from reference point"
 #define STR_ERR_M303_DISABLED               "PIDTEMP disabled"
 #define STR_M119_REPORT                     "Reporting endstop status"
@@ -379,6 +379,10 @@
 #define LCD_STR_E5 "E" LCD_STR_N5
 #define LCD_STR_E6 "E" LCD_STR_N6
 #define LCD_STR_E7 "E" LCD_STR_N7
+
+// Use superscripts, if possible. Evaluated at point of use.
+#define SUPERSCRIPT_TWO   TERN(NOT_EXTENDED_ISO10646_1_5X7, "^2", "²")
+#define SUPERSCRIPT_THREE TERN(NOT_EXTENDED_ISO10646_1_5X7, "^3", "³")
 
 #include "multi_language.h"   // Allow multiple languages
 
