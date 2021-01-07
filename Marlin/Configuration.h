@@ -540,9 +540,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //Bed originale Artillery
-  #define DEFAULT_bedKp 26.37
-  #define DEFAULT_bedKi 1.77
-  #define DEFAULT_bedKd 262.06
+  #define DEFAULT_bedKp 30.66
+  #define DEFAULT_bedKi 6.03
+  #define DEFAULT_bedKd 103.84
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
