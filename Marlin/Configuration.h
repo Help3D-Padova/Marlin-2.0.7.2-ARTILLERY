@@ -504,10 +504,15 @@
     #define DEFAULT_Kd 41.93
   #endif
 
-  // Sidewinder X1 / Genius
-  #define DEFAULT_Kp 12.19
-  #define DEFAULT_Ki 0.89
-  #define DEFAULT_Kd 41.93
+  // Artillery Genius Hotend
+  //#define DEFAULT_Kp 14.86
+  //#define DEFAULT_Ki 1.08
+  //#define DEFAULT_Kd 50.83
+
+  // Artillery X1 Hotend
+  //#define DEFAULT_Kp 16.58
+  //#define DEFAULT_Ki 1.59
+  //#define DEFAULT_Kd 43.12
 
 
 #endif // PIDTEMP
@@ -545,10 +550,15 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  //Bed originale Artillery
-  #define DEFAULT_bedKp 26.37
-  #define DEFAULT_bedKi 1.77
-  #define DEFAULT_bedKd 262.06
+  //Bed originale Artillery X1
+  #define DEFAULT_bedKp 45.91
+  #define DEFAULT_bedKi 8.24
+  #define DEFAULT_bedKd 170.51
+
+  //Bed originale Artillery Genius
+  //#define DEFAULT_bedKp 30.66
+  //#define DEFAULT_bedKi 6.03
+  //#define DEFAULT_bedKd 103.84
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1403,7 +1413,7 @@
 
 // Homing speeds (mm/min)
 #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_Z  (15*60)
+#define HOMING_FEEDRATE_Z  (5*60)
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
