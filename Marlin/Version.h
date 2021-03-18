@@ -28,7 +28,7 @@
 /**
  * Marlin release version identifier
  */
-#define SHORT_BUILD_VERSION "Marlin-2.0.7.2-V6-X1MB"
+#define SHORT_BUILD_VERSION "Marlin-2.0.7.2-V6-Hemera-X1MB"
 
 /**
  * Verbose version identifier which should contain a reference to the location
